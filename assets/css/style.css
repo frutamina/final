@@ -208,6 +208,14 @@ h4 {
   color: #fff;
 }
 
+/* SOCIAL ICONS */
+
+.social-icon {
+  color: white;
+  font-size: 2rem;
+}
+
+
 /* CORPO */
 
 .titulo {
@@ -291,10 +299,6 @@ h4 {
   /* Linha visível ao ativar */
 }
 
-.social-icon {
-  color: var(--cor-icone);
-  font-size: 2rem;
-}
 
 .menu-link:hover .social-icon {
   color: var(--cor-hover);
