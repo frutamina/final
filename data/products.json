@@ -256,6 +256,15 @@
     "image": "assets/svg/produtos/rama.webp",
     "alt": "tomate",
     "selo": false,
-    "visible":false
+    "visible": true
+  },
+  {
+    "slug": "abacate",
+  "title": "Abacates",
+  "description": "Ideal para vitaminas, saladas e guacamole.",
+  "image": "assets/svg/produtos/breda.webp",
+  "alt": "abacate",
+  "selo": false,
+  "visible": true
   }
 ]

@@ -799,13 +799,46 @@ const produtosData = {
     ],
      tomate: [
         {
-            titulo: "Atemoia",
-            descricao: "Fruta doce e cremosa, com sabor suave e aromático.",
-            imagem: "assets/svg/produtos/atemoia.webp",
+            titulo: "Tomate Cereja",
+            descricao: "Pequeno, suculento e muito doce. Ideal para saladas, snacks e decoração de pratos.",
+            imagem: "assets/svg/produtos/cocktail.webp",
             impactCharacters: [
-                { icon: "bi-emoji-smile", texto: "Sabor doce e aromático" },
-                { icon: "bi-cup-straw", texto: "Perfeita para sucos" },
-                { icon: "bi-leaf", texto: "Polpa cremosa" }
+                { icon: "bi-emoji-heart-eyes", texto: "Extremamente doce" },
+                { icon: "bi-droplet", texto: "Muito suculento" },
+                { icon: "bi-basket", texto: "Prático para petiscos" }
+            ]
+        },
+        {
+            titulo: "Tomate em Rama",
+            descricao: "Tomates frescos colhidos em ramos, com sabor intenso e aroma marcante. Ideais para pratos gourmet e decoração.",
+            imagem: "assets/svg/produtos/rama.webp",
+            impactCharacters: [
+                { icon: "bi-flower1", texto: "Aroma marcante" },
+                { icon: "bi-star", texto: "Sabor intenso" },
+                { icon: "bi-patch-check", texto: "Visual gourmet" }
+            ]
+        },
+    ],
+     abacate: [
+        
+        {
+            titulo: "Abacate Breda",
+            descricao: "Abacate tradicional brasileiro, de polpa macia, sabor suave e excelente para vitaminas e receitas.",
+            imagem: "assets/svg/produtos/breda.webp",
+            impactCharacters: [
+                { icon: "bi-droplet", texto: "Polpa macia" },
+                { icon: "bi-egg-fried", texto: "Ideal para vitaminas" },
+                { icon: "bi-heart", texto: "Sabor suave" }
+            ]
+        },
+        {
+            titulo: "Avocado",
+            descricao: "Fruto pequeno, casca escura e polpa cremosa. Rico em nutrientes, perfeito para saladas, toasts e guacamole.",
+            imagem: "assets/svg/produtos/avocado.webp",
+            impactCharacters: [
+                { icon: "bi-star", texto: "Rico em nutrientes" },
+                { icon: "bi-leaf", texto: "Polpa cremosa" },
+                { icon: "bi-patch-check", texto: "Perfeito para guacamole" }
             ]
         },
     ],
