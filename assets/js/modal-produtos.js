@@ -797,7 +797,7 @@ const produtosData = {
             ]
         }
     ],
-     tomate: [
+    tomate: [
         {
             titulo: "Tomate Cereja",
             descricao: "Pequeno, suculento e muito doce. Ideal para saladas, snacks e decoração de pratos.",
@@ -819,8 +819,8 @@ const produtosData = {
             ]
         },
     ],
-     abacate: [
-        
+    abacate: [
+
         {
             titulo: "Abacate Breda",
             descricao: "Abacate tradicional brasileiro, de polpa macia, sabor suave e excelente para vitaminas e receitas.",
@@ -842,7 +842,30 @@ const produtosData = {
             ]
         },
     ],
-
+    limao: [
+        {
+            titulo: "Limão Tahiti",
+            descricao: "Casca fina, polpa suculenta e acidez equilibrada. Ideal para sucos, temperos e preparo de bebidas.",
+            imagem: "assets/svg/produtos/limao.webp",
+            impactCharacters: [
+                { icon: "bi-cup-straw", texto: "Perfeito para sucos" },
+                { icon: "bi-heart-pulse", texto: "Rico em vitamina C" },
+                { icon: "bi-emoji-smile", texto: "Sabor refrescante" }
+            ]
+        }
+    ],
+    framboesa: [
+        {
+            titulo: "Framboesa",
+            descricao: "Pequena e delicada. Rica em vitaminas e antioxidantes — ideal para consumo in natura, geleias, sobremesas e sucos.",
+            imagem: "assets/svg/produtos/framboesa.webp",
+            impactCharacters: [
+                { icon: "bi-heart-pulse", texto: "Rica em antioxidantes" },
+                { icon: "bi-cup-straw", texto: "Ótima para sucos e geleias" },
+                { icon: "bi-emoji-smile", texto: "Sabor delicado" }
+            ]
+        }
+    ],
 
 
 };

@@ -266,5 +266,23 @@
   "alt": "abacate",
   "selo": false,
   "visible": true
+  },
+  {
+    "slug": "limao",
+  "title": "Limões",
+  "description": "Ideal para limonadas, saladas e doces.",
+  "image": "assets/svg/produtos/limao.webp",
+  "alt": "limao",
+  "selo": false,
+  "visible": true
+  },
+  {
+    "slug": "framboesa",
+  "title": "framboesa",
+  "description": "Ideal para limonadas, saladas e doces.",
+  "image": "assets/svg/produtos/framboesa.webp",
+  "alt": "limao",
+  "selo": false,
+  "visible": true
   }
 ]
