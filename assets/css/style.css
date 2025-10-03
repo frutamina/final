@@ -49,12 +49,7 @@ html {
   padding-right: 2rem;
 }
 
-#home,
-#sobre,
-#produtos,
-#contato {
-  scroll-margin-top: 5rem;
-}
+
 
 .produtos,
 .sobre,
@@ -537,7 +532,6 @@ h4 {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  scroll-margin-top: 2.5rem;
   /* ajuste conforme a altura do seu header */
 }
 
@@ -637,11 +631,8 @@ h4 {
 }
 
 /* Sobre */
-.sobre {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  scroll-margin-top: 2.5rem;
+#sobre {
+  scroll-margin-top: 2rem;
 }
 
 .sobre-content1,
