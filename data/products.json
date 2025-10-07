@@ -6,7 +6,7 @@
     "image": "assets/svg/produtos/am-rei.webp",
     "alt": "amarelo-rei",
     "selo": true,
-    "visible":true
+    "visible": true
   },
   {
     "slug": "melao",
