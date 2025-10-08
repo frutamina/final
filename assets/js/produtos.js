@@ -73,7 +73,6 @@
 
     const btn = document.createElement('button');
     btn.className = 'btn btn-primario btn-ver-mais';
-    // mantém chamada por slug para compatibilidade com seu modal atual
     btn.setAttribute('onclick', `abrirModal('${escapeHtml(item.slug || '')}')`);
     btn.innerHTML = `<span class="btn-texto">Ver mais</span> <i class="bi bi-search"></i>`;
     article.appendChild(btn);

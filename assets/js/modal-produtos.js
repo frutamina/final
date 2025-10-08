@@ -345,23 +345,13 @@ const produtosData = {
         {
             titulo: "Uva vitória",
             descricao: "Mesa clássica, baga grande e firme, sabor doce e levemente ácido. Ideal para consumo in natura.",
-            imagem: "assets/svg/produtos/uva1.webp",
+            imagem: "assets/svg/produtos/vitoria.webp",
             impactCharacters: [
                 { icon: "bi-apple", texto: "Boa firmeza" },
                 { icon: "bi-emoji-smile", texto: "Sabor equilibrado" },
                 { icon: "bi-basket", texto: "Mesa premium" }
             ]
         },
-        {
-            titulo: "Uva X",
-            descricao: "Sem sementes, baga verde-clara, doçura intensa. Perfeita para sucos e decoração.",
-            imagem: "assets/svg/produtos/uva2.webp",
-            impactCharacters: [
-                { icon: "bi-x-circle", texto: "Sem sementes" },
-                { icon: "bi-cup-straw", texto: "Ótima para sucos" },
-                { icon: "bi-palette", texto: "Visual limpo" }
-            ]
-        }
     ],
     abacaxi: [
         {
@@ -421,8 +411,7 @@ const produtosData = {
         {
             titulo: "Manga Espada",
             descricao: "Variedade popular, de polpa suculenta e fibras finas, sabor adocicado com leve acidez. Muito usada em sucos e consumo direto.",
-            imagem: "assets/svg/produtos/manga-espada.webp",
-            visible: false,
+            imagem: "assets/svg/produtos/espada.webp",
             impactCharacters: [
                 { icon: "bi-droplet", texto: "Polpa suculenta" },
                 { icon: "bi-emoji-smile", texto: "Sabor equilibrado" },
@@ -447,6 +436,17 @@ const produtosData = {
             titulo: "Morango San Andreas",
             descricao: "Variedade de alto rendimento, com sabor adocicado e excelente firmeza. Ideal para transporte e consumo in natura.",
             imagem: "assets/svg/produtos/morango.webp",
+
+            impactCharacters: [
+                { icon: "bi-graph-up", texto: "Alta produtividade" },
+                { icon: "bi-truck", texto: "Bom transporte" },
+                { icon: "bi-emoji-smile", texto: "Sabor doce" }
+            ]
+        },
+        {
+            titulo: "San Andreas Sul",
+            descricao: "Morango San Andreas, mas esse vem diretamente do Sul do Brasil",
+            imagem: "assets/svg/produtos/morango-sul.webp",
 
             impactCharacters: [
                 { icon: "bi-graph-up", texto: "Alta produtividade" },
@@ -818,6 +818,16 @@ const produtosData = {
                 { icon: "bi-patch-check", texto: "Visual gourmet" }
             ]
         },
+        {
+            titulo: "Tomate Romanita",
+            descricao: "Sabor equilibrado entre doçura e acidez, polpa firme e textura agradável. Excelente para saladas, grelhados e pratos que precisam de cortes decorativos.",
+            imagem: "assets/svg/produtos/romanita.webp",
+            impactCharacters: [
+                { icon: "bi-apple", texto: "Polpa firme" },
+                { icon: "bi-leaf", texto: "Ótimo para saladas" },
+                { icon: "bi-box-seam", texto: "Boa conservação" }
+            ]
+        },
     ],
     abacate: [
 
@@ -839,6 +849,16 @@ const produtosData = {
                 { icon: "bi-star", texto: "Rico em nutrientes" },
                 { icon: "bi-leaf", texto: "Polpa cremosa" },
                 { icon: "bi-patch-check", texto: "Perfeito para guacamole" }
+            ]
+        },
+        {
+            titulo: "Abacate Margarida",
+            descricao: "Variedade Margarida: polpa cremosa, sabor suave e textura amanteigada. Ideal para consumo in natura, vitaminas e preparos gourmet.",
+            imagem: "assets/svg/produtos/margarida.webp",
+            impactCharacters: [
+                { icon: "bi-droplet", texto: "Polpa cremosa" },
+                { icon: "bi-heart", texto: "Sabor suave" },
+                { icon: "bi-shop", texto: "Boa aceitação no varejo" }
             ]
         },
     ],

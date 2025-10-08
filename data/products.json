@@ -260,29 +260,29 @@
   },
   {
     "slug": "abacate",
-  "title": "Abacates",
-  "description": "Ideal para vitaminas, saladas e guacamole.",
-  "image": "assets/svg/produtos/breda.webp",
-  "alt": "abacate",
-  "selo": false,
-  "visible": true
+    "title": "Abacates",
+    "description": "Ideal para vitaminas, saladas e guacamole.",
+    "image": "assets/svg/produtos/breda.webp",
+    "alt": "abacate",
+    "selo": false,
+    "visible": true
   },
   {
     "slug": "limao",
-  "title": "Limões",
-  "description": "Ideal para limonadas, saladas e doces.",
-  "image": "assets/svg/produtos/limao.webp",
-  "alt": "limao",
-  "selo": false,
-  "visible": true
+    "title": "Limões",
+    "description": "Ideal para limonadas, saladas e doces.",
+    "image": "assets/svg/produtos/limao.webp",
+    "alt": "limao",
+    "selo": false,
+    "visible": true
   },
   {
     "slug": "framboesa",
-  "title": "framboesa",
-  "description": "Ideal para limonadas, saladas e doces.",
-  "image": "assets/svg/produtos/framboesa.webp",
-  "alt": "limao",
-  "selo": false,
-  "visible": true
+    "title": "framboesa",
+    "description": "Tanto para consumo fresco quanto em doces e sobremesas.",
+    "image": "assets/svg/produtos/framboesa.webp",
+    "alt": "limao",
+    "selo": false,
+    "visible": true
   }
 ]
