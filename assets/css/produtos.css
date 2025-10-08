@@ -200,6 +200,18 @@ h4 {
     pointer-events: none;
 }
 
+/* Reservar espaço para imagens importantes reduzindo CLS */
+.logo img,
+.produto-img,
+.selo-rei,
+.modal-imagem img,
+.sobre-logo {
+    aspect-ratio: 4 / 3;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 #header {
     display: flex;
     flex-direction: row;
@@ -580,7 +592,7 @@ h4 {
 
 
 
-/* POUP-UP */
+/* POP-UP */
 
 .modal-produto {
     position: fixed;
@@ -622,33 +634,7 @@ h4 {
     flex-direction: column;
     gap: 1rem;
     padding: 0.5rem 0.5rem;
-}
-
-.modal-texto h2 {
-    font-size: 2rem;
-    font-family: var(--fonte-titulos2);
-    color: #fff;
-    margin-bottom: .5rem;
-    text-align: center;
-}
-
-.modal-texto p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    font-family: var(--fonte-textos);
-    color: white;
-}
-
-.modal-botoes {
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-    margin-top: 2rem;
-    color: white;
-    position: absolute;
-    bottom: 1.5rem;
-    right: 1.5rem;
-    display: flex;
+ 
 }
 
 .modal-imagem img {
@@ -656,6 +642,7 @@ h4 {
     max-height: 450px;
     object-fit: cover;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
 }
 
 .modal-texto h2 {
@@ -695,6 +682,8 @@ h4 {
     margin: 0 auto;
 }
 
+
+
 .impact-characters {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -703,41 +692,7 @@ h4 {
     margin-top: 5rem;
 }
 
-/* ATENÇÃO */
-.impact-characters .character {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
-    padding: 0.8rem 1.2rem;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.6rem;
-    transition: transform 0.2s ease, background 0.2s ease;
-    font-family: var(--fonte-escrita);
-    min-width: 0;
-    max-width: none;
-    text-align: center;
-    width: 100%;
-    box-sizing: border-box;
-    flex-direction: column;
-}
 
-.impact-characters .character:hover {
-    background: rgba(255, 255, 255, 0.1);
-    transform: translateY(-3px);
-}
-
-.impact-characters .character span {
-    color: #fff;
-    font-family: var(--fonte-escrita);
-    font-size: 1rem;
-}
-
-.impact-characters .character i {
-    font-size: 1.5rem;
-    line-height: 1;
-}
 
 
 .modal-progresso {
@@ -815,10 +770,13 @@ h4 {
     background: transparent;
     border: 2px solid #fff;
     color: #fff;
-    padding: 0.6rem 1.2rem;
+    padding: 0.5rem 1rem;
     border-radius: 2rem;
-    font-size: 1rem;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
     transition: all 0.3s ease;
+    
 }
 
 .modal-botoes button i {
@@ -837,6 +795,19 @@ h4 {
     padding-bottom: 4rem;
     /* espaço extra para não sobrepor os botões */
     color: white;
+}
+
+/* Botões do modal: alinhamento padrão (desktop) à direita, em linha */
+.modal-botoes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    color: white;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
 }
 
 /* IMAGEM */
@@ -864,11 +835,30 @@ h4 {
     transform: rotate(90deg);
 }
 
+/* Consolidado: .impact-characters .character + elementos internos */
 .impact-characters .character {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.8rem 1.2rem;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 0.95rem;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.6rem;
+    transition: transform 0.2s ease, background 0.2s ease;
+    font-family: var(--fonte-escrita);
+    min-width: 0;
+    max-width: none;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.impact-characters .character:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
 }
 
 .impact-characters .character i {
@@ -881,7 +871,6 @@ h4 {
     height: auto;
     object-fit: contain;
     border-radius: 50%;
-    /* deixa redondinho como ícone */
 }
 
 
@@ -911,11 +900,6 @@ footer {
     color: var(--cor-texto);
 }
 
-.pedro {
-    color: white;
-    font-weight: 700;
-}
-
 
 .btn-footer {
     display: inline-block;
@@ -937,6 +921,7 @@ footer {
 
 .pedro {
     color: #fff;
+    font-weight: 700;
     font-size: 1rem;
     margin: 0;
 }

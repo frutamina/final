@@ -1,7 +1,7 @@
 [
   {
     "slug": "itaueira",
-    "title": "Familia Itaueira",
+    "title": "Família Itaueira",
     "description": "Produtos premium da linha itaueira",
     "image": "assets/svg/produtos/am-rei.webp",
     "alt": "amarelo-rei",
@@ -269,7 +269,7 @@
   },
   {
     "slug": "limao",
-    "title": "Limões",
+    "title": "limões",
     "description": "Ideal para limonadas, saladas e doces.",
     "image": "assets/svg/produtos/limao.webp",
     "alt": "limao",
@@ -278,10 +278,10 @@
   },
   {
     "slug": "framboesa",
-    "title": "framboesa",
+    "title": "Framboesa",
     "description": "Tanto para consumo fresco quanto em doces e sobremesas.",
     "image": "assets/svg/produtos/framboesa.webp",
-    "alt": "limao",
+    "alt": "framboesa",
     "selo": false,
     "visible": true
   }
