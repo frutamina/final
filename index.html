@@ -5,9 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frutamina | Comercial </title>
+  <meta name="description" content="Frutamina - Atacadista de hortifruti. Frutas frescas, seleção e distribuição para pontos de venda. Atendimento em São Paulo e CEAGESP.">
+  <meta name="theme-color" content="#2ecc71">
   <meta name="format-detection" content="telephone=no">
 
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Google Fonts (carregamento otimizado) -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700;900&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <!-- Preload imagem do banner para reduzir tempo até o primeiro paint do herói -->
+  <link rel="preload" href="assets/svg/banner2.svg" as="image">
   <!-- Favicon -->
 
   <!-- Preconnect fonts (melhora carregamento do Google Fonts) -->
@@ -29,7 +36,7 @@
     <!-- Logo -->
     <div class="header-logo">
       <a href="#home">
-        <img src="assets/svg/logo.webp" alt="" class="logo" />
+  <img src="assets/svg/logo.webp" alt="Frutamina - logo" class="logo" width="600" height="450" />
       </a>
     </div>
 
@@ -174,7 +181,7 @@
       <div class="produtos-container">
 
         <article class="produtos-card">
-          <img src="assets/svg/produtos/amarelo.webp" alt="" class="card-cover" loading="lazy" />
+            <img src="assets/svg/produtos/amarelo.webp" alt="Melões Frutamina" class="card-cover" loading="lazy" width="800" height="600" />
 
           <div class="card-body">
             <h3 class="card-title">Melões</h3>
@@ -197,18 +204,18 @@
             </ul>
 
             <div class="card-button">
+              <a href="produtos.html">
               <button class="btn btn-primario">
-                <a href="produtos.html">
                   <span class="btn-texto">Ver mais</span>
                   <i class="bi bi-search"></i>
-                </a>
-              </button>
+                </button>
+              </a>  
             </div>
           </div>
         </article>
 
         <article class="produtos-card2">
-          <img src="assets/svg/produtos/melancia.webp" alt="" class="card-cover" loading="lazy" />
+          <img src="assets/svg/produtos/melancia.webp" alt="Melancias Frutamina" class="card-cover" loading="lazy" width="800" height="600" />
 
           <div class="card-body">
             <h3 class="card-title">Melancias</h3>
@@ -231,17 +238,17 @@
             </ul>
 
             <div class="card-button">
+              <a href="produtos.html">
               <button class="btn btn-primario">
-                <a href="produtos.html">
                   <span class="btn-texto">Ver mais</span>
                   <i class="bi bi-search"></i>
                 </a>
-              </button>
+                </button>
             </div>
         </article>
 
         <article class="produtos-card">
-          <img src="assets/svg/produtos/palmer.webp" alt="" class="card-cover" loading="lazy" />
+          <img src="assets/svg/produtos/palmer.webp" alt="Mangas Palmer Frutamina" class="card-cover" loading="lazy" width="800" height="600" />
 
           <div class="card-body">
             <h3 class="card-title">Mangas</h3>
@@ -265,12 +272,12 @@
             </ul>
 
             <div class="card-button">
+              <a href="produtos.html">
               <button class="btn btn-primario">
-                <a href="produtos.html">
                   <span class="btn-texto">Ver mais</span>
                   <i class="bi bi-search"></i>
-                </a>
-              </button>
+                </button>
+              </a>
             </div>
         </article>
         <a href="produtos.html">
@@ -285,7 +292,7 @@
 
       <!-- Conteudo 1 -->
       <div class="sobre-content1">
-        <img src="assets/svg/logo2.webp" alt="" class="sobre-logo" loading="lazy">
+  <img src="assets/svg/logo2.webp" alt="Frutamina - selo" class="sobre-logo" loading="lazy" width="600" height="450">
 
         <div class="sobre-description">
           <h2> sobre nós </h2>
@@ -387,6 +394,7 @@
                   <h3>Fale Conosco</h3>
                   <p>Envie sua mensagem e nossa equipe responderá o mais breve possível.</p>
                 </div>
+                
 
                 <!-- IMPORTANTE: troque a URL abaixo pelo seu endpoint Formspree -->
                 <form class="form-contato" id="formContato" action="https://formspree.io/f/xeolblra" method="POST"

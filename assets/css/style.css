@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Duployan:wght@400;700&family=Noto+Sans+SC:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -241,11 +239,10 @@ h4 {
   pointer-events: none;
 }
 
-.logo img,
-.card-cover,
-.produto-img,
-.selo-rei,
-.modal-imagem img {
+logo img,
+card-cover,
+produto-img,
+modal-imagem img {
   aspect-ratio: 4 / 3;
   max-width: 100%;
   height: auto;
@@ -606,14 +603,12 @@ h4 {
   flex-direction: column;
   gap: 0.5rem;
   color: var(--cor-texto);
-  font-family: var(--fonte-escrita);
+  font-family: var(--fonte-textos);
 }
-
 
 
 .card-item i {
   font-size: 1.1rem;
-  /* tamanho fonte */
 }
 
 .card-item {
@@ -621,6 +616,7 @@ h4 {
   gap: 0.5rem;
   text-rendering: optimizeLegibility;
 }
+
 
 .card-button {
   display: flex;
@@ -1091,6 +1087,9 @@ footer {
   font-size: 1rem;
 }
 
+::-webkit-scrollbar {
+   display: none;
+}
 
 /* Responsivo */
 @media (max-width: 1200px) {

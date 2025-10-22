@@ -4,49 +4,27 @@ console.log("[MODAL] modal-produtos.js carregado – Todos os produtos");
 const produtosData = {
     itaueira: [
         {
-            titulo: "Melão Amarelo Rei",
-            descricao: "Doce, suculento e sempre pronto para consumo imediato.",
+            titulo: "Melão Amarelo",
+            descricao: "O Melão Amarelo clássico da Itaueira. Consistente, doce, suculento e sempre no ponto ideal. Sua polpa firme garante alta durabilidade e frescor prolongado.",
             imagem: "assets/svg/produtos/am-rei.webp",
             impactCharacters: [
-                { icon: "bi-emoji-smile", texto: "Sabor doce" },
-                { icon: "bi-brightness-high", texto: "Alta durabilidade" },
-                { img: "assets/svg/logo-rei.webp", texto: "Família Itaueira" }
+                { icon: "bi-emoji-smile", texto: "Sabor e doçura consistentes" },
+                { icon: "bi-brightness-high", texto: "Alta durabilidade e frescor" },
+                { img: "assets/svg/logo-rei.webp", texto: "O Clássico da Itaueira" }
             ]
         },
         {
-            titulo: "Melão Amarelo Cepi",
-            descricao: "Variedade selecionada, com textura macia e frescor prolongado.",
-            imagem: "assets/svg/produtos/amarelo-cepi.webp",
-            visible: false,
-            impactCharacters: [
-                { icon: "bi-emoji-smile", texto: "Sabor suave" },
-                { icon: "bi-sun", texto: "Cultivo especial" },
-                { img: "assets/svg/logo-rei.webp", texto: "Família Itaueira" }
-            ]
-        },
-        {
-            titulo: "Melão Sapo Rei",
-            descricao: "Clássico e refrescante, ideal para consumo diário.",
+            titulo: "Melão Pele de Sapo",
+            descricao: "O clássico 'Pele de Sapo' da Itaueira. Polpa amarela vibrante, suculenta e sabor deliciosamente refrescante. Tradição e qualidade para o consumo diário.",
             imagem: "assets/svg/produtos/sapo-rei.webp",
             impactCharacters: [
-                { icon: "bi-emoji-smile", texto: "Sabor refrescante" },
-                { icon: "bi-droplet", texto: "Textura suculenta" },
-                { img: "assets/svg/logo-rei.webp", texto: "Família Itaueira" }
+                { icon: "bi-emoji-smile", texto: "Sabor refrescante inigualável" },
+                { icon: "bi-droplet", texto: "Textura suculenta e macia" },
+                { img: "assets/svg/logo-rei.webp", texto: "Clássico da Família Itaueira" }
             ]
         },
         {
-            titulo: "Melão Sapo Cepi",
-            descricao: "Variedade diferenciada, com frescor marcante e textura firme.",
-            imagem: "assets/svg/produtos/sapo-cepi.webp",
-            visible: false,
-            impactCharacters: [
-                { icon: "bi-emoji-smile", texto: "Sabor intenso" },
-                { icon: "bi-sun", texto: "Cultivo selecionado" },
-                { img: "assets/svg/logo-rei.webp", texto: "Família Itaueira" }
-            ]
-        },
-        {
-            titulo: "Melão Matisse Rei",
+            titulo: "Melão Matisse",
             descricao: "Fruto sofisticado, com sabor adocicado e aroma marcante.",
             imagem: "assets/svg/produtos/matisse-rei.webp",
             impactCharacters: [
@@ -55,57 +33,26 @@ const produtosData = {
                 { img: "assets/svg/logo-rei.webp", texto: "Família Itaueira" }
             ]
         },
+
         {
-            titulo: "Melão Matisse Cepi",
-            descricao: "Exclusivo e delicado, perfeito para quem busca qualidade e frescor.",
-            imagem: "assets/svg/produtos/matisse-cepi.webp",
-            impactCharacters: [
-                { icon: "bi-emoji-smile", texto: "Sabor marcante" },
-                { icon: "bi-sun", texto: "Cultivo especial" },
-                { img: "assets/svg/logo-rei.webp", texto: "Família Itaueira" }
-            ]
-        },
-        {
-            titulo: "Melão Galia Rei",
-            descricao: "Doce e aromático, com sabor que conquista no primeiro corte.",
+            titulo: "Melão Galia",
+            descricao: "O Galia tradicional da Família Itaueira. Extremamente doce e aromático, com polpa verde-clara e casca reticulada. Seu sabor intenso conquista no primeiro corte, sendo o mais suculento da linha.",
             imagem: "assets/svg/produtos/galia-rei.webp",
+            impactCharacters: [
+                { icon: "bi-emoji-smile", texto: "Doçura e aroma intensos" },
+                { icon: "bi-droplet", texto: "Altíssima suculência" },
+                { img: "assets/svg/logo-rei.webp", texto: "O Clássico da Itaueira" }
+            ]
+        },
 
-            impactCharacters: [
-                { icon: "bi-emoji-smile", texto: "Sabor doce" },
-                { icon: "bi-droplet", texto: "Muito suculento" },
-                { img: "assets/svg/logo-rei.webp", texto: "Família Itaueira" }
-            ]
-        },
         {
-            titulo: "Melão Galia Cepi",
-            descricao: "Variedade de alta qualidade, com frescor e aroma únicos.",
-            imagem: "assets/svg/produtos/galia-cepi.webp",
-            impactCharacters: [
-                { icon: "bi-emoji-smile", texto: "Sabor delicado" },
-                { icon: "bi-sun", texto: "Cultivo controlado" },
-                { img: "assets/svg/logo-rei.webp", texto: "Família Itaueira" }
-            ]
-        },
-        {
-            titulo: "Melão Cantaloupe Rei",
-            descricao: "Intensamente aromático, com sabor doce e textura macia.",
+            titulo: "Melão Cantaloupe",
+            descricao: "O Cantaloupe clássico da Itaueira. Intensamente aromático, com polpa alaranjada de sabor consistentemente doce. A escolha perfeita para quem busca excelência.",
             imagem: "assets/svg/produtos/cantaloupe-rei.webp",
-
             impactCharacters: [
-                { icon: "bi-emoji-smile", texto: "Sabor marcante" },
-                { icon: "bi-droplet", texto: "Textura cremosa" },
-                { img: "assets/svg/logo-rei.webp", texto: "Família Itaueira" }
-            ]
-        },
-        {
-            titulo: "Melão Cantaloupe Cepi",
-            descricao: "Com sabor intenso e aroma tropical, é perfeito para ocasiões especiais.",
-            imagem: "assets/svg/produtos/cantaloupe-cepi.webp",
-            visible: false,
-            impactCharacters: [
-                { icon: "bi-emoji-smile", texto: "Sabor tropical" },
-                { icon: "bi-sun", texto: "Cultivo especial" },
-                { img: "assets/svg/logo-rei.webp", texto: "Família Itaueira" }
+                { icon: "bi-emoji-smile", texto: "Sabor marcante e doce" },
+                { icon: "bi-droplet", texto: "Textura macia e cremosa" },
+                { img: "assets/svg/logo-rei.webp", texto: "O Clássico da Itaueira" }
             ]
         },
 
@@ -120,33 +67,11 @@ const produtosData = {
                 { img: "assets/svg/logo-rei.webp", texto: "Família Itaueira" }
             ]
         },
-        {
-            titulo: "Melancia Cepi",
-            descricao: "Com equilíbrio perfeito entre doçura e frescor.",
-            imagem: "assets/svg/produtos/melancia-cepi.webp",
-
-            impactCharacters: [
-                { icon: "bi-droplet-half", texto: "Frescor garantido" },
-                { icon: "bi-heart", texto: "Fonte natural de hidratação" },
-                { img: "assets/svg/logo-rei.webp", texto: "Família Itaueira" }
-            ]
-        },
-        {
-            titulo: "Melancia Cepi Branca",
-            descricao: "Com equilíbrio perfeito entre doçura e frescor.",
-            imagem: "assets/svg/produtos/branca.webp",
-
-            impactCharacters: [
-                { icon: "bi-droplet-half", texto: "Frescor garantido" },
-                { icon: "bi-heart", texto: "Fonte natural de hidratação" },
-                { img: "assets/svg/logo-rei.webp", texto: "Família Itaueira" }
-            ]
-        },
 
         {
             titulo: "Pimentão Amarelo",
             descricao: "Doce e delicado, ótimo para consumo cru, recheado ou em pratos leves.",
-            imagem: "assets/svg/produtos/pamarelo.webp",
+            imagem: "assets/svg/produtos/pama.webp",
 
             impactCharacters: [
                 { icon: "bi-brightness-high", texto: "Cor vibrante" },
@@ -168,7 +93,7 @@ const produtosData = {
         {
             titulo: "Pimentão Laranja",
             descricao: "Equilíbrio entre doçura e frescor, ideal para saladas coloridas e receitas criativas.",
-            imagem: "assets/svg/produtos/plaranja.webp",
+            imagem: "assets/svg/produtos/plar.webp",
 
             impactCharacters: [
                 { icon: "bi-palette", texto: "Cor diferenciada" },
@@ -200,41 +125,113 @@ const produtosData = {
             ]
         }
     ],
-    melancia: [
+    amarelo: [
         {
-            titulo: "Melancia Baby",
-            descricao: "Fruta menor e prática, de polpa doce e refrescante. Ideal para consumo individual e porções rápidas.",
-            imagem: "assets/svg/produtos/melanciasb.webp",
-
+            titulo: "Cepi",
+            descricao: "Variedade selecionada e cultivada especialmente para um sabor mais suave e equilibrado. Apresenta textura macia e frescor ideal para ser consumido a qualquer hora do dia.",
+            imagem: "assets/svg/produtos/amarelo-cepi.webp",
+            visible: true,
             impactCharacters: [
-                { icon: "bi-droplet", texto: "Muito suculenta" },
-                { icon: "bi-emoji-smile", texto: "Doce e refrescante" },
-                { icon: "bi-basket", texto: "Tamanho prático" }
+                { icon: "bi-emoji-smile", texto: "Sabor suave e equilibrado" },
+                { icon: "bi-sun", texto: "Cultivo e seleção especiais" },
+                { img: "assets/svg/logo-rei.webp", texto: "Família Itaueira" }
             ]
-        }
-
-    ],
-    melao: [
+        },
         {
-            titulo: "Melão Amarelo",
-            descricao: "Doce, suculento e sempre pronto para consumo imediato. Ideal para cafés da manhã e sobremesas leves.",
-            imagem: "assets/svg/produtos/amarelo.webp",
-
+            titulo: "Gaia",
+            descricao: "Destaca-se pela casca amarela brilhante. Polpa macia, extremamente suculenta e sabor doce. É perfeito para alta hidratação e consumo nos dias mais quentes.",
+            imagem: "assets/svg/produtos/gaia.webp",
             impactCharacters: [
-                { icon: "bi-emoji-smile", texto: "Sabor doce" },
+                { icon: "bi-droplet", texto: "Extremamente hidratante" },
+                { icon: "bi-emoji-smile", texto: "Polpa macia e suculenta" },
+                { img: "assets/svg/logo-rei.webp", texto: "Família Itaueira" }
+            ]
+        },
+        {
+            titulo: "Otani",
+            descricao: "Melão de marca premium Otani, conhecido pelo seu sabor doce marcante e alta durabilidade pós-colheita. Ideal para cafés da manhã e sobremesas leves.",
+            imagem: "assets/svg/produtos/amarelo.webp",
+            impactCharacters: [
+                { icon: "bi-emoji-smile", texto: "Sabor doce superior" },
                 { icon: "bi-brightness-high", texto: "Alta durabilidade" },
                 { icon: "bi-box-seam", texto: "Marca premium" }
             ]
         },
         {
-            titulo: "Melão Pele de Sapo",
-            descricao: "Casca verde rajada e polpa branca adocicada. Versátil, ideal para consumo in natura ou em saladas de frutas.",
-            imagem: "assets/svg/produtos/sapo.webp",
-
+            titulo: "Mossoró",
+            descricao: "Cultivado em Mossoró, é muito hidratante e altamente refrescante. Com sabor doce e longa vida útil, é ideal para saladas de frutas, vitaminas e smoothies.",
+            imagem: "assets/svg/produtos/ammoss.webp",
             impactCharacters: [
-                { icon: "bi-bag-check", texto: "Aceito no atacado" },
-                { icon: "bi-droplet", texto: "Polpa suculenta" },
-                { icon: "bi-globe", texto: "Popular internacional" }
+                { icon: "bi-droplet", texto: "Muito hidratante" },
+                { icon: "bi-clock", texto: "Longa vida útil" },
+                { icon: "bi-geo-alt", texto: "Cultivo de Mossoró" }
+            ]
+        },
+        {
+            titulo: "Angel",
+            descricao: "Melão com casca amarela brilhante e formato elegante. Sua polpa é macia, suculenta e tem um sabor doce e suave. A opção perfeita para servir em ocasiões especiais.",
+            imagem: "assets/svg/produtos/amangel.webp",
+            impactCharacters: [
+                { icon: "bi-droplet", texto: "Muito hidratante" },
+                { icon: "bi-emoji-smile", texto: "Sabor doce e suave" },
+                { icon: "bi-gift", texto: "Ideal para servir/presentear" }
+            ]
+        }
+
+    ],
+    sapo: [
+        {
+            titulo: "Cepi",
+            descricao: "Variedade do Melão Espanhol (Pele de Sapo) selecionada pela linha Cepi. Destaca-se pela casca verde rajada, polpa branca firme e um sabor doce e suave. Excelente para fatiar e servir.",
+            imagem: "assets/svg/produtos/spcepi.webp",
+            impactCharacters: [
+                { icon: "bi-emoji-smile", texto: "Sabor doce e suave" },
+                { icon: "bi-bookmark", texto: "Polpa firme e crocante" },
+                { img: "assets/svg/logo-rei.webp", texto: "Família Itaueira" }
+            ]
+        },
+        {
+            titulo: "Lola",
+            descricao: "Variedade 'Pele de Sapo' com polpa amarela extremamente suculenta e macia. Sabor doce e muito refrescante, ideal para alta hidratação e receitas versáteis.",
+            imagem: "assets/svg/produtos/splola.webp",
+            impactCharacters: [
+                { icon: "bi-droplet", texto: "Alto poder hidratante" },
+                { icon: "bi-emoji-smile", texto: "Sabor doce e muito refrescante" },
+                { icon: "bi-star", texto: "Qualidade premium e versatilidade" }
+            ]
+        },
+        {
+            titulo: "Samba",
+            descricao: "Explosão de sabor tropical na casca 'Pele de Sapo'. Polpa amarela vibrante com doçura equilibrada e toque de frescor. Excelente durabilidade.",
+            imagem: "assets/svg/produtos/spsamba.webp",
+            impactCharacters: [
+                { icon: "bi-droplet", texto: "Altamente suculento" },
+                { icon: "bi-emoji-smile", texto: "Doçura com toque tropical" },
+                { icon: "bi-clock", texto: "Longa vida útil e frescor" }
+            ]
+        },
+        {
+            titulo: "Melicia",
+            descricao: "A opção 'Pele de Sapo' para quem ama doçura intensa. Polpa amarela suculenta com sabor inconfundível, extremamente doce e melado. Satisfação garantida.",
+            imagem: "assets/svg/produtos/spmelicia.webp",
+            impactCharacters: [
+                { icon: "bi-droplet", texto: "Polpa suculenta e macia" },
+                { icon: "bi-emoji-smile", texto: "Sabor intensamente doce e melado" },
+                { icon: "bi-star", texto: "Garantia de alta qualidade" }
+            ]
+        }
+    ],
+
+    matisse: [
+
+        {
+            titulo: "Melão Matisse Cepi",
+            descricao: "Exclusivo e delicado, perfeito para quem busca qualidade e frescor.",
+            imagem: "assets/svg/produtos/matisse-cepi.webp",
+            impactCharacters: [
+                { icon: "bi-emoji-smile", texto: "Sabor marcante" },
+                { icon: "bi-sun", texto: "Cultivo especial" },
+                { img: "assets/svg/logo-rei.webp", texto: "Família Itaueira" }
             ]
         },
         {
@@ -248,45 +245,187 @@ const produtosData = {
                 { icon: "bi-trophy", texto: "Alta valorização" }
             ]
         },
+    ],
+    galia: [
         {
-            titulo: "Melão Gália",
-            descricao: "Casca amarelada com polpa esverdeada clara, textura macia e sabor suave. Excelente para dias quentes.",
-            imagem: "assets/svg/produtos/galia.webp",
-
+            titulo: "Cepi",
+            descricao: "Variedade Galia de alta qualidade, reconhecida pelo seu sabor delicado e frescor prolongado. Possui um aroma inconfundível e é cultivado sob um regime controlado para garantir a perfeição da textura e doçura.",
+            imagem: "assets/svg/produtos/galia-cepi.webp",
             impactCharacters: [
-                { icon: "bi-emoji-sunglasses", texto: "Refrescante" },
-                { icon: "bi-droplet-half", texto: "Polpa leve" },
-                { icon: "bi-bag-heart", texto: "Aceito no varejo" }
+                { icon: "bi-emoji-smile", texto: "Sabor delicado e refinado" },
+                { icon: "bi-sun", texto: "Cultivo e maturação controlados" },
+                { img: "assets/svg/logo-rei.webp", texto: "Família Itaueira" }
             ]
         },
         {
-            titulo: "Melão Cantaloupe",
-            descricao: "Um dos mais aromáticos. Casca rendada e polpa firme e doce. Ideal para cafés da manhã.",
-            imagem: "assets/svg/produtos/charentais.webp",
-
+            titulo: "Mossoró",
+            descricao: "Nascido no Nordeste, este Galia tem sabor doce e refrescante com polpa amarela brilhante sob a casca verde. Ideal para receitas tropicais, garante alta hidratação e um toque de sabor regional.",
+            imagem: "assets/svg/produtos/gamoss.webp",
             impactCharacters: [
-                { icon: "bi-flower3", texto: "Aroma marcante" },
-                { icon: "bi-egg-fried", texto: "Pratos sofisticados" },
-                { icon: "bi-cup-hot", texto: "Café da manhã" }
+                { icon: "bi-emoji-smile", texto: "Sabor doce e tropical" },
+                { icon: "bi-droplet", texto: "Muito hidratante" },
+                { icon: "bi-geo-alt", texto: "Sabor do Nordeste" }
             ]
         },
         {
-            titulo: "Melão Orange",
-            descricao: "Polpa alaranjada, doce e levemente aromática. Rico em vitaminas, perfeito para sucos tropicais.",
-            imagem: "assets/svg/produtos/orange.webp",
-
+            titulo: "Samba",
+            descricao: "Com casca verde com manchas escuras e polpa amarela suculenta, o Galia Samba combina doçura com um toque marcante de frescor. É a escolha perfeita para consumir puro ou em sucos nos dias mais quentes.",
+            imagem: "assets/svg/produtos/gasamba.webp",
             impactCharacters: [
-                { icon: "bi-star", texto: "Cor vibrante" },
-                { icon: "bi-cup-straw", texto: "Ideal para sucos" },
-                { icon: "bi-heart", texto: "Rico em nutrientes" }
+                { icon: "bi-emoji-smile", texto: "Sabor doce e fresco" },
+                { icon: "bi-droplet", texto: "Polpa suculenta e macia" },
+                { icon: "bi-clock", texto: "Fácil conservação" }
+            ]
+        }
+
+    ],
+    cantaloupe: [
+
+        {
+            titulo: "Cepi",
+            descricao: "Um Cantaloupe premium com sabor intenso e aroma inconfundível. Sua polpa alaranjada é suculenta e ideal para realçar o frescor em coquetéis ou ser a estrela de ocasiões especiais.",
+            imagem: "assets/svg/produtos/cantamossi.webp",
+            impactCharacters: [
+                { icon: "bi-emoji-smile", texto: "Sabor tropical intenso" },
+                { icon: "bi-sun", texto: "Cultivo e seleção especiais" },
+                { img: "assets/svg/logo-rei.webp", texto: "Família Itaueira" }
+            ]
+        },
+        {
+            titulo: "Mossoró",
+            descricao: "Diretamente do Nordeste, este Cantaloupe oferece um sabor vibrante e aroma tropical. Sua polpa é doce, firme e suculenta, refletindo a força do clima de Mossoró. Ideal para o consumo diário.",
+            imagem: "assets/svg/produtos/cantamoss.webp",
+            impactCharacters: [
+                { icon: "bi-emoji-smile", texto: "Sabor tropical vibrante" },
+                { icon: "bi-geo-alt", texto: "Força do clima Nordestino" },
+                { icon: "bi-star", texto: "Qualidade garantida" }
             ]
         }
     ],
+
+    orange: [
+
+        {
+            titulo: "Mossoró",
+            descricao: "Melão Orange de casca lisa e polpa vibrante. Cultivado em Mossoró, possui sabor doce intenso, textura macia e aroma suave, sendo um campeão em vitaminas.",
+            imagem: "assets/svg/produtos/orgmoss.webp",
+            impactCharacters: [
+                { icon: "bi-star", texto: "Sabor naturalmente doce" },
+                { icon: "bi-cup-straw", texto: "Polpa ideal para sucos" },
+                { icon: "bi-geo-alt", texto: "Cultivo de Mossoró" }
+            ]
+        },
+        {
+            titulo: "Mossoró (Rede)",
+            descricao: "O clássico Melão Orange de Mossoró, embalado em rede de proteção. Polpa alaranjada, doce e rica em nutrientes. Perfeito para consumo in natura ou sucos, com praticidade na compra.",
+            imagem: "assets/svg/produtos/orgmoss-rede.webp",
+            impactCharacters: [
+                { icon: "bi-star", texto: "Embalado em rede" },
+                { icon: "bi-cup-straw", texto: "Ideal para sucos" },
+                { icon: "bi-heart", texto: "Rico em betacaroteno" }
+            ]
+        },
+        {
+            titulo: "Frutamina",
+            descricao: "Melão Orange liso da linha Frutamina. Polpa alaranjada, superdoce e com aroma tropical. Excelente fonte de vitaminas, ideal para quem busca sabor e nutrição.",
+            imagem: "assets/svg/produtos/orgfruta.webp",
+            impactCharacters: [
+                { icon: "bi-star", texto: "Sabor doce e tropical" },
+                { icon: "bi-cup-straw", texto: "Alta suculência" },
+                { img: "assets/svg/logo2.webp", texto: "Linha Frutamina" }
+            ]
+        },
+        {
+            titulo: "Frutamina (Rede)",
+            descricao: "Melão Frutamina com a conveniência da embalagem em rede de proteção. Possui polpa alaranjada firme, sabor doce intenso e aroma delicado. Ótima escolha para o consumo direto e saladas.",
+            imagem: "assets/svg/produtos/orgfruta-rede.webp",
+            impactCharacters: [
+                { icon: "bi-star", texto: "Embalado em rede" },
+                { icon: "bi-clock", texto: "Fácil conservação" },
+                { img: "assets/svg/logo2.webp", texto: "Linha Frutamina" }
+            ]
+        }
+
+    ],
+
+    melancia: [
+        {
+            titulo: "Magali",
+            descricao: "A melancia sem sementes mais famosa! Polpa vermelha vibrante e incrivelmente doce. É extremamente suculenta e perfeita para compartilhar em momentos especiais. Qualidade garantida Itaueira.",
+            imagem: "assets/svg/produtos/sem-semente.webp",
+            impactCharacters: [
+                { icon: "bi-droplet", texto: "Extremamente suculenta" },
+                { icon: "bi-emoji-laughing", texto: "Sabor marcante e doce" },
+                { img: "assets/svg/logo-rei.webp", texto: "Sem sementes Itaueira" }
+            ]
+        },
+        {
+            titulo: "Melancia Cepi",
+            descricao: "Variedade clássica de melancia, ideal para o verão. Apresenta polpa vermelha intensa com um equilíbrio perfeito entre doçura e frescor. É uma fonte natural e deliciosa de hidratação.",
+            imagem: "assets/svg/produtos/melancia-cepi.webp",
+            impactCharacters: [
+                { icon: "bi-droplet-half", texto: "Frescor garantido" },
+                { icon: "bi-heart", texto: "Fonte natural de hidratação" },
+                { img: "assets/svg/logo-rei.webp", texto: "Família Itaueira" }
+            ]
+        },
+        {
+            titulo: "Melancia Cepi Branca",
+            descricao: "Melancia de polpa tradicional, mas com a casca externa mais clara ('branca'). Oferece o mesmo equilíbrio de doçura e frescor da linha Cepi, sendo um produto selecionado Itaueira.",
+            imagem: "assets/svg/produtos/branca.webp",
+            impactCharacters: [
+                { icon: "bi-droplet-half", texto: "Casca clara distintiva" },
+                { icon: "bi-heart", texto: "Polpa suculenta e doce" },
+                { img: "assets/svg/logo-rei.webp", texto: "Família Itaueira" }
+            ]
+        },
+        {
+            titulo: "Melancia Samba",
+            descricao: "A melancia 'Mini' ideal. Fruta menor e prática, de polpa doce, crocante e muito refrescante. Perfeita para consumo individual, porções rápidas ou lanches.",
+            imagem: "assets/svg/produtos/melanciasb.webp",
+            impactCharacters: [
+                { icon: "bi-droplet", texto: "Muito suculenta" },
+                { icon: "bi-emoji-smile", texto: "Doce e refrescante" },
+                { icon: "bi-basket", texto: "Tamanho individual prático" }
+            ]
+        },
+        {
+            titulo: "Melancia Potiguar",
+            descricao: "Melancia tipo 'Mini' proveniente da região Potiguar. Fruta de tamanho prático, com polpa vermelha intensa, sabor doce e alta suculência. Excelente para quem busca frescor em porções menores.",
+            imagem: "assets/svg/produtos/melancia.webp",
+            impactCharacters: [
+                { icon: "bi-droplet", texto: "Alta suculência" },
+                { icon: "bi-emoji-smile", texto: "Doce e refrescante" },
+                { icon: "bi-geo-alt", texto: "Origem Potiguar" }
+            ]
+        },
+        {
+            titulo: "Melancia Mossoró",
+            descricao: "Melancia do tipo 'Mini', cultivada em Mossoró. Fruta prática e fácil de armazenar, com polpa de sabor doce e textura firme. Ideal para lanches e consumo individual sem desperdício.",
+            imagem: "assets/svg/produtos/melmoss.webp",
+            impactCharacters: [
+                { icon: "bi-droplet", texto: "Polpa firme e suculenta" },
+                { icon: "bi-emoji-smile", texto: "Doce e refrescante" },
+                { icon: "bi-geo-alt", texto: "Cultivo de Mossoró" }
+            ]
+        },
+        {
+            titulo: "Melancia Usoprades",
+            descricao: "Melancia 'Mini' com ótimo padrão de qualidade. Fruta menor e prática, de polpa doce e refrescante. Seu tamanho facilita o transporte e o consumo rápido, ideal para todas as ocasiões.",
+            imagem: "assets/svg/produtos/meluso.webp",
+            impactCharacters: [
+                { icon: "bi-droplet", texto: "Muito suculenta" },
+                { icon: "bi-emoji-smile", texto: "Doce e refrescante" },
+                { icon: "bi-basket", texto: "Tamanho prático" }
+            ]
+        }
+    ],
+
     pimentao: [
         {
             titulo: "Pimentão Amarelo",
             descricao: "Doce e delicado, ótimo para consumo cru, recheado ou em pratos leves.",
-            imagem: "assets/svg/produtos/pamarelo.webp",
+            imagem: "assets/svg/produtos/pama.webp",
 
             impactCharacters: [
                 { icon: "bi-brightness-high", texto: "Cor vibrante" },
@@ -308,7 +447,7 @@ const produtosData = {
         {
             titulo: "Pimentão Laranja",
             descricao: "Equilíbrio entre doçura e frescor, ideal para saladas coloridas e receitas criativas.",
-            imagem: "assets/svg/produtos/plaranja.webp",
+            imagem: "assets/svg/produtos/plar.webp",
 
             impactCharacters: [
                 { icon: "bi-palette", texto: "Cor diferenciada" },
@@ -979,19 +1118,7 @@ function anteriorProduto() {
     preencherModal(modalState.lista[modalState.index]);
 }
 
-// ================== IMAGEM FULLSCREEN ==================
-function abrirImagemFullscreen(src) {
-    const win = window.open("");
-    if (win) win.document.write(`<img src="${src}" style="width:100%">`);
-}
 
-function setupModalImageZoom() {
-    const imagem = document.getElementById("modalImagem");
-    if (!imagem) return;
-    imagem.addEventListener("click", () => abrirImagemFullscreen(imagem.src));
-}
-
-document.addEventListener("DOMContentLoaded", setupModalImageZoom);
 
 // ================== TECLAS DE ATALHO ==================
 document.addEventListener("keydown", (e) => {
