@@ -300,7 +300,17 @@ const produtosData = {
                 { icon: "bi-geo-alt", texto: "Força do clima Nordestino" },
                 { icon: "bi-star", texto: "Qualidade garantida" }
             ]
-        }
+        },
+        {
+            titulo: "Samba",
+            descricao: "O Cantaloupe Samba melão com casca texturizada e polpa alaranjada, macia e extremamente suculenta. Seu sabor doce e refrescante faz dele uma escolha perfeita para dias quentes e uma adição deliciosa a saladas de frutas ou sucos.",
+            imagem: "assets/svg/produtos/cantasamba.webp",
+            impactCharacters: [
+                { icon: "bi-emoji-smile", texto: "Sabor doce" },
+                { icon: "bi-droplet", texto: "Muito hidratante" },
+                { icon: "bi-sun", texto: "Ideal para dias quentes" }
+            ]
+        },
     ],
 
     orange: [
@@ -1045,18 +1055,32 @@ function abrirModal(slug) {
     }
 
     lista = lista.filter(p => p.visible !== false);
-
     if (!lista.length) {
         console.warn("Nenhum produto visível para:", slug);
         return;
     }
 
     modalState = { slug, index: 0, lista };
-    preencherModal(lista[0]);
 
     const modal = document.getElementById("modalProduto");
+    const img = document.getElementById("modalImagem");
+    const loader = document.getElementById("modalLoader");
+
+    // Mostrar spinner e esconder imagem
+    if (loader) loader.style.display = "flex";
+    if (img) img.style.display = "none";
+
+    preencherModal(lista[0]); // aqui a imagem será definida
+
+    // Quando a imagem terminar de carregar
+    img.onload = function () {
+        if (loader) loader.style.display = "none";
+        img.style.display = "block";
+    };
+
     if (modal) modal.style.display = "flex";
 }
+
 
 
 function preencherModal(produto) {
@@ -1065,15 +1089,25 @@ function preencherModal(produto) {
     const titulo = document.getElementById("modalTitulo");
     const descricao = document.getElementById("modalDescricao");
     const imagem = document.getElementById("modalImagem");
-    const miniGaleria = document.getElementById("miniGaleria");
     const impact = document.querySelector(".impact-characters");
     const progresso = document.getElementById("progressoTexto");
+    const loader = document.getElementById("modalLoader"); // <- Spinner aqui
+
+    // Mostra o loader e esconde a imagem enquanto carrega
+    if (loader) loader.style.display = "flex";
+    if (imagem) imagem.style.display = "none";
 
     if (titulo) titulo.textContent = produto.titulo || "";
     if (descricao) descricao.textContent = produto.descricao || "";
-    if (imagem) imagem.src = produto.imagem || "";
 
-
+    if (imagem) {
+        imagem.onload = function () {
+            // Quando terminar de carregar
+            if (loader) loader.style.display = "none";
+            imagem.style.display = "block";
+        };
+        imagem.src = produto.imagem || "";
+    }
 
     // Impact characters
     if (impact) {
@@ -1086,7 +1120,6 @@ function preencherModal(produto) {
             } else if (c.img) {
                 div.innerHTML = `<img src="${c.img}" alt="icon"><span>${c.texto}</span>`;
             }
-
             impact.appendChild(div);
         });
     }
@@ -1096,8 +1129,6 @@ function preencherModal(produto) {
         progresso.textContent = `${modalState.index + 1}/${modalState.lista.length}`;
     }
 }
-
-
 
 
 function fecharModal() {
